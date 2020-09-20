@@ -9,12 +9,11 @@ var sum = function () {
     if (typeof numbers === undefined) {
         return 0;
     }
-    var sum = 0;
+    var total = 0;
     for (var _a = 0, numbers_1 = numbers; _a < numbers_1.length; _a++) {
         var number = numbers_1[_a];
-        sum += number;
+        total += number;
     }
-    return sum;
+    return total;
 };
-var sums = [sum(), sum(100), sum(2000, 1), sum(-500, -300)];
-console.log(sums);
+console.log([sum(), sum(100), sum(2000, 1), sum(-500, -300)]);

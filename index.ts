@@ -7,15 +7,13 @@ const sum = (...numbers: Array<number>): number => {
     return 0;
   }
 
-  let sum: number = 0;
+  let total: number = 0;
 
   for (const number of numbers) {
-    sum += number;
+    total += number;
   }
 
-  return sum;
+  return total;
 }
 
-const sums = [sum(), sum(100), sum(2000, 1), sum(-500, -300)]
-
-console.log(sums);
+console.log([sum(), sum(100), sum(2000, 1), sum(-500, -300)]);
